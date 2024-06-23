@@ -22,6 +22,8 @@ public class Dice
     {
         List<int> results = new List<int>();
 
+        if (rolls > 50) throw new SystemException("Wow! its too high");
+
         // It is recommended to create activities, only when doing operations that are worth measuring independently.
         // Too many activities makes it harder to visualize in tools like Jaeger.
         using (var myActivity = activitySource.StartActivity("rollTheDice"))
