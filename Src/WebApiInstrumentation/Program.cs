@@ -21,6 +21,9 @@ builder.Services.AddOpenTelemetry()
     .WithTracing(tracing => tracing
         .AddSource(serviceName)
         .AddAspNetCoreInstrumentation()
+        .SetResourceBuilder(
+            ResourceBuilder.CreateDefault()
+            .AddService(serviceName: serviceName, serviceVersion: serviceVersion))
         .AddConsoleExporter()
         .AddJaegerExporter(options =>
         {

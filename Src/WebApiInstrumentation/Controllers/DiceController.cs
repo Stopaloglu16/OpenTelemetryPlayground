@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OpenTelemetry.Trace;
 using System.Diagnostics;
 using System.Net;
 using WebApiInstrumentation.Entity;
@@ -9,17 +10,23 @@ public class DiceController : ControllerBase
 {
     private ILogger<DiceController> logger;
     private ActivitySource activitySource;
+    private readonly Tracer _tracer;
 
-    public DiceController(ILogger<DiceController> logger, Instrumentation instrumentation)
+    public DiceController(ILogger<DiceController> logger, Instrumentation instrumentation, TracerProvider tracerProvider)
     {
         this.logger = logger;
         this.activitySource = instrumentation.ActivitySource;
+        _tracer = tracerProvider.GetTracer(instrumentation.ActivitySource.Name);
     }
 
     [HttpGet("/rolldice")]
     public List<int> RollDice(string player, int? rolls)
     {
         List<int> result = new List<int>();
+
+        using var span = _tracer.StartActiveSpan("GetAction");
+
+        span.SetAttribute("startt", "start1");
 
         if (!rolls.HasValue)
         {
