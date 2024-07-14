@@ -5,9 +5,11 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{398666B8-DB58-4047-A779-B40B7C69CFB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSimple", "Src\WebApiSimple\WebApiSimple.csproj", "{1FB221FF-4764-4F3D-98C1-247D707A3E0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiSimple", "Src\WebApiSimple\WebApiSimple.csproj", "{1FB221FF-4764-4F3D-98C1-247D707A3E0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiInstrumentation", "Src\WebApiInstrumentation\WebApiInstrumentation.csproj", "{AAA88144-6226-408B-ADC2-954F0B57B0DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiInstrumentation", "Src\WebApiInstrumentation\WebApiInstrumentation.csproj", "{AAA88144-6226-408B-ADC2-954F0B57B0DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAdvanced", "Src\WebApiAdvanced\WebApiAdvanced.csproj", "{A66FEF4A-E1F2-4C04-A37A-99FB91C3BB8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{AAA88144-6226-408B-ADC2-954F0B57B0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAA88144-6226-408B-ADC2-954F0B57B0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAA88144-6226-408B-ADC2-954F0B57B0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A66FEF4A-E1F2-4C04-A37A-99FB91C3BB8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A66FEF4A-E1F2-4C04-A37A-99FB91C3BB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A66FEF4A-E1F2-4C04-A37A-99FB91C3BB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A66FEF4A-E1F2-4C04-A37A-99FB91C3BB8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1FB221FF-4764-4F3D-98C1-247D707A3E0D} = {398666B8-DB58-4047-A779-B40B7C69CFB6}
 		{AAA88144-6226-408B-ADC2-954F0B57B0DB} = {398666B8-DB58-4047-A779-B40B7C69CFB6}
+		{A66FEF4A-E1F2-4C04-A37A-99FB91C3BB8E} = {398666B8-DB58-4047-A779-B40B7C69CFB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {793CC863-F223-467E-BF96-BE335543FEE4}
