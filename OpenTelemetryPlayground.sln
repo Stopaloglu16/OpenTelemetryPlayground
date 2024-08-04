@@ -9,7 +9,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiSimple", "Src\WebApiS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiInstrumentation", "Src\WebApiInstrumentation\WebApiInstrumentation.csproj", "{AAA88144-6226-408B-ADC2-954F0B57B0DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAdvanced", "Src\WebApiAdvanced\WebApiAdvanced.csproj", "{A66FEF4A-E1F2-4C04-A37A-99FB91C3BB8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiAdvanced", "Src\WebApiAdvanced\WebApiAdvanced.csproj", "{A66FEF4A-E1F2-4C04-A37A-99FB91C3BB8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{225338B1-879C-4D01-8BA5-E44E5E264928}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Results", "Results", "{AC8480CF-C12B-46C5-B89B-C9ECBCF7BBFE}"
+	ProjectSection(SolutionItems) = preProject
+		Src\Docs\Results\Result Search.png = Src\Docs\Results\Result Search.png
+		Src\Docs\Results\Result1.png = Src\Docs\Results\Result1.png
+		Src\Docs\Results\Result2.png = Src\Docs\Results\Result2.png
+		Src\Docs\Results\Result3.png = Src\Docs\Results\Result3.png
+		Src\Docs\Results\Results.txt = Src\Docs\Results\Results.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +48,7 @@ Global
 		{1FB221FF-4764-4F3D-98C1-247D707A3E0D} = {398666B8-DB58-4047-A779-B40B7C69CFB6}
 		{AAA88144-6226-408B-ADC2-954F0B57B0DB} = {398666B8-DB58-4047-A779-B40B7C69CFB6}
 		{A66FEF4A-E1F2-4C04-A37A-99FB91C3BB8E} = {398666B8-DB58-4047-A779-B40B7C69CFB6}
+		{AC8480CF-C12B-46C5-B89B-C9ECBCF7BBFE} = {225338B1-879C-4D01-8BA5-E44E5E264928}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {793CC863-F223-467E-BF96-BE335543FEE4}

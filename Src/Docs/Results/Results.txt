@@ -1,0 +1,16 @@
+
+
+Result Search
+AddJob: On controller level activity checking
+AddJobAsync: On JobRepo level activity checking
+
+Result1
+
+
+Result2
+Crashed API on controller level with throw exception
+Exception message is on Logs section
+
+Result3 
+Succesfull job saved. 
+Tags shows: saved data {job number Id}
