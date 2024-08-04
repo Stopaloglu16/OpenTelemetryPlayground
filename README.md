@@ -1,4 +1,4 @@
-# OpenTelemetryPlayground (In Progress)
+# OpenTelemetryPlayground
 
 ## First step
 Following samples from **[`OpenTelemetry .NET Documentation`](https://opentelemetry.io/docs/languages/net/)** , this repository demonstrates basic setup and integration.
@@ -35,6 +35,8 @@ docker run -d --name jaeger \
 In this step, we create a new ASP.NET Core project that includes:
 
 - SQL query execution using an InMemoryDatabase.
+- Added Span on controller and repository level
+- Added the logic if returns exception 
 
 # Technologies
 
