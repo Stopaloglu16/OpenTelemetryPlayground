@@ -18,6 +18,8 @@ Pull the Jaeger Docker image
 
 docker pull jaegertracing/all-in-one:latest
 
+https://www.jaegertracing.io/docs/1.53/getting-started/
+
 docker run -d --name jaeger \
   -e COLLECTOR_ZIPKIN_HTTP_PORT=9411 \
   -p 5775:5775/udp \
